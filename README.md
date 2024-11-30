@@ -10,7 +10,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 
 - Solution URL: [Frontend Mentor]()
-- Live Site URL: [GitHub]()
+- Live Site URL: [Deploy](https://kalebemax.github.io/interactive-rating-component-main/)
 
 
 
