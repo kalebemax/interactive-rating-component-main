@@ -9,7 +9,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 
 
-- Solution URL: [Frontend Mentor]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-rating-component-solution-5PtQ7HxAed)
 - Live Site URL: [Deploy](https://kalebemax.github.io/interactive-rating-component-main/)
 
 
