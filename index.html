@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Title- -->
+    <title>Frontend Mentor | Interactive rating component</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="font-[Overpass] text-[15px] bg-[#121417] text-white flex flex-col justify-center items-center m-0 p-0 h-screen w-screen box-border"
+  >
+    <main
+      id="main"
+      class="bg-[#252d37] w-[370px] sm:w-[400px] h-[410px] rounded-2xl transition-all"
+    >
+      <div class="bg-[#29313C] m-7 w-[50px] h-[50px] rounded-full relative">
+        <img
+          class="absolute top-4 left-[17px]"
+          src="images/icon-star.svg"
+          alt="icon-star"
+        />
+      </div>
+      <!-- Rating state start -->
+      <div class="m-7">
+        <h1 class="text-3xl font-bold">How did we do?</h1>
+        <p class="text-[#959eac] mt-5 w-[310px] sm:w-[350px]">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div
+        class="text-[#959eac] font-bold ml-7 mb-7 flex space-x-7 sm:space-x-9 relative"
+      >
+        <button
+          id="btn1"
+          class="rating-btn bg-[#29313C] p-5 h-10 rounded-full hover:bg-[#fb7413] active:bg-opacity-[10] hover:text-[#121417] focus:bg-white focus:text-[#121417]"
+        >
+          <p class="absolute bottom-2 left-[17px]">1</p>
+        </button>
+        <button
+          id="btn2"
+          class="rating-btn bg-[#29313C] p-5 h-10 rounded-full hover:bg-[#fb7413] active:bg-opacity-[10] hover:text-[#121417] focus:bg-white focus:text-[#121417]"
+        >
+          <p class="absolute bottom-2 left-[83px] sm:left-[91px]">2</p>
+        </button>
+        <button
+          id="btn3"
+          class="rating-btn bg-[#29313C] p-5 h-10 rounded-full hover:bg-[#fb7413] active:bg-opacity-[10] hover:text-[#121417] focus:bg-white focus:text-[#121417]"
+        >
+          <p class="absolute bottom-2 right-[182px] sm:right-[196px]">3</p>
+        </button>
+        <button
+          id="btn4"
+          class="rating-btn bg-[#29313C] p-5 h-10 rounded-full hover:bg-[#fb7413] active:bg-opacity-[10] hover:text-[#121417] focus:bg-white focus:text-[#121417]"
+        >
+          <p class="absolute bottom-2 right-[113px] sm:right-[119px]">4</p>
+        </button>
+        <button
+          id="btn5"
+          class="rating-btn bg-[#29313C] p-5 h-10 rounded-full hover:bg-[#fb7413] active:bg-opacity-[10] hover:text-[#121417] focus:bg-white focus:text-[#121417]"
+        >
+          <p class="absolute bottom-2 right-[45px] sm:right-[43px]">5</p>
+        </button>
+      </div>
+      <button
+        id="submit"
+        class="bg-[#fb7413] hover:bg-white transition-all active:opacity-5 text-[#121417] text-lg font-bold ml-8 w-[85%] h-12 rounded-full"
+      >
+        SUBMIT
+      </button>
+      <!-- Rating state end -->
+    </main>
+    <!-- Thank you state start -->
+    <div
+      id="card"
+      class="bg-[#252d37] text-white w-[370px] sm:w-[400px] h-[410px] rounded-2xl text-center hidden"
+    >
+      <img
+        class="mt-10 ml-24 sm:ml-28"
+        src="images/illustration-thank-you.svg"
+        alt="illustration-thank-you"
+      />
+      <p
+        id="rating"
+        class="bg-[#29313C] text-[#fb7413cc] m-5 mt-7 ml-[98px] sm:ml-[105px] p-2 w-[46%] rounded-full"
+      >
+        You selected out of 5
+      </p>
+      <h1 class="text-3xl font-bold mt-8">Thank you!</h1>
+      <p class="text-[#959eac] m-5 ml-7 sm:w-[340px]">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
+    <!-- Thank you state end -->
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
